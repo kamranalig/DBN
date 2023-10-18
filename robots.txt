@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /administrador/
+Disallow: /sections/
+Disallow: /webfonts/
+Disallow: /images/
+Disallow: /photography/
+Allow: /webfonts/webfonts.css
