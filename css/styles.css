@@ -502,7 +502,7 @@ ul.dropdown li ul li a {
 
   /*border-bottom-right-radius:20px;*/
 
-  width: 200px;
+  width: 230px;
 }
 
 #menu_menu:hover #menu_sub {
@@ -518,6 +518,8 @@ ul.dropdown li ul li a {
   border-bottom: 0.15vw solid #f8f8f8;
   box-sizing: border-box;
   align-items: center;
+
+  font-weight: bold;
 
   width: 100%;
 }
@@ -753,8 +755,8 @@ ul.dropdown li ul li a {
     font-size: 12px;
     width: 100%;
     position: fixed;
-    position: relative;
-    /* bottom: 0px; */
+    /* position: relative; */
+    bottom: 0px;
   }
 }
 
@@ -906,7 +908,7 @@ ul.dropdown li ul li a {
 
   float: right;
 
-  margin-right: 7vw;
+  margin-right: 5vw;
 }
 
 #testimonials-container-dots {
@@ -961,23 +963,11 @@ ul.dropdown li ul li a {
 
   text-align: center;
 
-  -webkit-background: linear-gradient(
-    rgb(219, 234, 204),
-    rgb(219, 234, 204),
-    rgb(248, 250, 247)
-  );
+  -webkit-background: linear-gradient(rgb(219, 234, 204), rgb(219, 234, 204), rgb(248, 250, 247));
 
-  -moz-background: linear-gradient(
-    rgb(219, 234, 204),
-    rgb(219, 234, 204),
-    rgb(248, 250, 247)
-  );
+  -moz-background: linear-gradient(rgb(219, 234, 204), rgb(219, 234, 204), rgb(248, 250, 247));
 
-  background: linear-gradient(
-    rgb(219, 234, 204),
-    rgb(219, 234, 204),
-    rgb(248, 250, 247)
-  );
+  background: linear-gradient(rgb(219, 234, 204), rgb(219, 234, 204), rgb(248, 250, 247));
 
   /*padding-bottom: 25vh;*/
 
@@ -1038,8 +1028,7 @@ ul.dropdown li ul li a {
 #sidebar span#line1 {
   /* "ALISSA PENDORF" tag */
 
-  font-family: "IntroSemiBold", "CoreSansG45Regular", "futura-pt", Helvetica,
-    sans-serif;
+  font-family: "IntroSemiBold", "CoreSansG45Regular", "futura-pt", Helvetica, sans-serif;
 
   font-style: normal;
 
@@ -1147,23 +1136,11 @@ ul.dropdown li ul li a {
 
   /*-webkit-background:linear-gradient(rgb(214,231,202),rgb(52,87,44),white);*/
 
-  -webkit-background: linear-gradient(
-    rgb(219, 234, 204),
-    rgb(52, 87, 44),
-    rgb(52, 87, 44)
-  );
+  -webkit-background: linear-gradient(rgb(219, 234, 204), rgb(52, 87, 44), rgb(52, 87, 44));
 
-  -moz-background: linear-gradient(
-    rgb(219, 234, 204),
-    rgb(52, 87, 44),
-    rgb(52, 87, 44)
-  );
+  -moz-background: linear-gradient(rgb(219, 234, 204), rgb(52, 87, 44), rgb(52, 87, 44));
 
-  background: linear-gradient(
-    rgb(219, 234, 204),
-    rgb(52, 87, 44),
-    rgb(52, 87, 44)
-  );
+  background: linear-gradient(rgb(219, 234, 204), rgb(52, 87, 44), rgb(52, 87, 44));
 }
 
 #work {
@@ -1173,9 +1150,24 @@ ul.dropdown li ul li a {
 
   margin-left: 2.4%;
 
-  margin-top: 55px;
+  position: absolute;
+  top: 0;
+  margin-top: calc(80px + 4rem);
 
   overflow: hidden;
+}
+
+#work-gallery {
+  width: 62%;
+}
+
+#work-gallery .projectImages {
+  width: 100%;
+}
+
+#work-gallery .projectControl {
+  width: 100%;
+  padding: 0 1rem;
 }
 
 .project {
@@ -1281,7 +1273,7 @@ ul.dropdown li ul li a {
 .projectControlPrev {
   position: relative;
 
-  left: -48px;
+  right: 96px;
 
   background: url(../images/Testimonial-Arrow-Back.svg) center center no-repeat;
 
@@ -1299,8 +1291,7 @@ ul.dropdown li ul li a {
 
   float: right;
 
-  background: white url(../images/Testimonial-Arrow-Next.svg) center center
-    no-repeat;
+  background: white url(../images/Testimonial-Arrow-Next.svg) center center no-repeat;
 
   width: 38px;
 
@@ -1315,8 +1306,7 @@ ul.dropdown li ul li a {
 }
 
 .galleryPrev {
-  background: url(../images/Testimonial-Arrow-Back-Faded.svg) center center
-    no-repeat;
+  background: url(../images/Testimonial-Arrow-Back-Faded.svg) center center no-repeat;
 }
 
 .galleryPrev:hover {
@@ -1324,8 +1314,7 @@ ul.dropdown li ul li a {
 }
 
 .galleryNext {
-  background: url(../images/Testimonial-Arrow-Next-Faded.svg) center center
-    no-repeat;
+  background: url(../images/Testimonial-Arrow-Next-Faded.svg) center center no-repeat;
 }
 
 .galleryNext:hover {
@@ -1647,6 +1636,7 @@ object {
   .wrapper {
     height: auto;
     /* padding-top: 2rem; */
+    margin-top: 0;
     background-color: rgb(219, 234, 204);
   }
 
@@ -1655,7 +1645,7 @@ object {
 
     width: 100%;
 
-    margin: 1em auto 0 auto;
+    margin: 4rem auto 0 auto;
 
     max-width: 480px;
 
@@ -1713,7 +1703,7 @@ object {
   }
 
   #testimonials-container {
-    margin: 0 auto;
+    margin: 2rem auto;
 
     float: none;
 
@@ -1858,23 +1848,11 @@ object {
 
     text-align: center;
 
-    -webkit-background: linear-gradient(
-      rgb(219, 234, 204),
-      rgb(219, 234, 204),
-      rgb(248, 250, 247)
-    );
+    -webkit-background: linear-gradient(rgb(219, 234, 204), rgb(219, 234, 204), rgb(248, 250, 247));
 
-    -moz-background: linear-gradient(
-      rgb(219, 234, 204),
-      rgb(219, 234, 204),
-      rgb(248, 250, 247)
-    );
+    -moz-background: linear-gradient(rgb(219, 234, 204), rgb(219, 234, 204), rgb(248, 250, 247));
 
-    background: linear-gradient(
-      rgb(219, 234, 204),
-      rgb(219, 234, 204),
-      rgb(248, 250, 247)
-    );
+    background: linear-gradient(rgb(219, 234, 204), rgb(219, 234, 204), rgb(248, 250, 247));
 
     height: 85vh;
   }
@@ -2011,7 +1989,7 @@ object {
   }
 
   #testimonials-container {
-    max-width: 35vw;
+    max-width: 40vw;
   }
 }
 
@@ -2053,7 +2031,7 @@ object {
   }
 
   #testimonials-container {
-    max-width: 36vw;
+    max-width: 40vw;
   }
 }
 
@@ -2087,11 +2065,11 @@ object {
   #testimonials-container {
     width: 100%;
 
-    max-width: 36vw;
+    max-width: 40vw;
 
     float: right;
 
-    margin-right: 7vw;
+    margin-right: 5vw;
   }
 }
 
@@ -2105,7 +2083,7 @@ object {
   }
 
   #testimonials-container {
-    max-width: 32vw;
+    max-width: 40vw;
   }
 
   .content_text-about {
@@ -2152,11 +2130,11 @@ object {
   #testimonials-container {
     width: 100%;
 
-    max-width: 34vw;
+    max-width: 36vw;
 
     float: right;
 
-    margin-right: 7vw;
+    margin-right: 5vw;
   }
   .content_text-about-inner h3 {
     font-size: 24px;
@@ -2285,7 +2263,7 @@ object {
     width: 80% !important;
     height: 100%;
     object-fit: contain;
-    margin-bottom: 2rem;
+    margin-bottom: 0.25rem;
   }
 }
 .image_wraper img {
