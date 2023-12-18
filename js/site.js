@@ -208,14 +208,18 @@ function hideControls() {
   });
 }
 
+let isAnimating = false; // Flag to control animation flow
+
 function viewImage(image, project) {
-  $("#" + project + " .projectImages>div").each(function (i) {
-    if (i == image) {
-      $(this).fadeIn(500);
-    } else {
-      $(this).fadeOut(200);
-    }
-  });
+  if (isAnimating) return; // Prevent new animation if one is already in progress
+  isAnimating = true;
+  // $("#" + project + " .projectImages>div").each(function (i) {
+  //   if (i == image) {
+  //     $(this).fadeIn(500);
+  //   } else {
+  //     $(this).fadeOut(200);
+  //   }
+  // });
 
   $("#" + project + " .projectContents>div").each(function (i) {
     if (i == image) {
@@ -231,6 +235,14 @@ function viewImage(image, project) {
     } else {
       this.className = "";
     }
+  });
+
+  let $projectImages = $("#" + project + " .projectImages>div");
+
+  $projectImages.fadeOut(200).promise().done(function() {
+    $projectImages.eq(image).fadeIn(500, function() {
+      isAnimating = false; // Reset flag after animation completes
+    });
   });
 }
 

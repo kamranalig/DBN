@@ -1580,7 +1580,7 @@ object {
   .content_text-about {
     padding: 20px 30px 30px 15px;
 
-    /* text-align: justify; */
+    text-align: center;
 
     font-size: 1rem;
 
